@@ -207,8 +207,8 @@ body {
 }
 
 .update-icon {
-  width: 32px;
-  height: 32px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   display: block;
 }
