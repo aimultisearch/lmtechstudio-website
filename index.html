@@ -15,9 +15,10 @@
   <!-- ── HERO ─────────────────────────────────────────────────────────────── -->
   <header class="hero">
     <div class="brand">
-      <img src="lm-tech-logo.png" alt="LM Tech Studio logo" />
-      <h1>LM Tech Studio</h1>
+      <img src="lm-tech-logo.png" alt="LM Tech Studio logo" class="brand-logo" />
+      <h1 class="brand-title">LM Tech Studio</h1>
     </div>
+    <p class="hero-slogan">Building intelligent apps that solve problems<br/>that still don't have great solutions.</p>
   </header>
 
   <!-- ── ABOUT ─────────────────────────────────────────────────────────────── -->
@@ -50,7 +51,7 @@
           </div>
         </a>
 
-        <!-- AI Find Games — FIX: double dot filename -->
+        <!-- AI Find Games -->
         <a class="app-card green" href="https://play.google.com/store/apps/details?id=com.aifindgames.app" target="_blank" rel="noopener noreferrer">
           <div class="card-image">
             <img src="ai-find-games..png" alt="AI Find Games" />
@@ -59,49 +60,99 @@
             <h3>AI Find Games</h3>
             <p>Find your next game based on your profile, mood and preferences.</p>
             <span class="badge">Available on Android</span>
-            <div class="pro-teaser">
-              <span class="pro-label">✨ PRO — Coming soon</span>
-              <ul class="pro-list">
-                <li>🎯 Perfect Match AI</li>
-                <li>📊 Gamer DNA</li>
-                <li>🗺️ Hidden Gems For You</li>
-              </ul>
-            </div>
           </div>
         </a>
 
       </div>
     </section>
 
-    <!-- ── LATEST UPDATES ─────────────────────────────────────────────────── -->
+    <!-- ── NEWS ──────────────────────────────────────────────────────────── -->
     <section class="updates">
-      <h2>Latest updates</h2>
+      <h2>News</h2>
       <div class="update-list">
-        <div class="update-item">
-          <img src="ai-find-games..png" alt="AI Find Games icon" />
-          <p><strong>AI Find Games</strong> — v1.0.3 · Critical stability fix</p>
+
+        <!-- Cliquable → popup PRO features -->
+        <div class="update-item clickable" id="news-pro" onclick="openModal()">
+          <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon" />
+          <p><strong>AI Find Games</strong> — Coming soon · Perfect Match AI · Gamer DNA · Hidden Gems For You</p>
+          <span class="news-arrow">›</span>
         </div>
+
         <div class="update-item">
-          <img src="ai-find-games..png" alt="AI Find Games icon" />
+          <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon" />
+          <p><strong>AI Find Games</strong> — v1.0.3 · Stability fix</p>
+        </div>
+
+        <div class="update-item">
+          <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon" />
           <p><strong>AI Find Games</strong> — Now available on Google Play</p>
         </div>
+
         <div class="update-item">
-          <img src="ai-multi-search.png" alt="AI Multi Search icon" />
+          <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon" />
+          <p><strong>AI Multi Search</strong> — Coming soon · Grok &amp; Camera Search</p>
+        </div>
+
+        <div class="update-item">
+          <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon" />
           <p><strong>AI Multi Search</strong> — Mistral integrated</p>
         </div>
+
         <div class="update-item">
-          <img src="ai-multi-search.png" alt="AI Multi Search icon" />
-          <p><strong>AI Multi Search</strong> — Insight update released</p>
+          <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon" />
+          <p><strong>AI Multi Search</strong> — Insight feature released</p>
         </div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- ── FOOTER ─────────────────────────────────────────────────────────────── -->
+  <!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
   <footer>
     <p>© 2026 LM Tech Studio · <a href="mailto:lmtechstudio.contact@gmail.com">Contact</a></p>
   </footer>
+
+  <!-- ── MODAL PRO FEATURES ─────────────────────────────────────────────────── -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-header">
+        <span class="modal-tag">✨ Coming soon to PRO</span>
+        <h3 class="modal-title">AI Find Games — Next PRO Features</h3>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-feature">
+          <div class="modal-feature-icon">🎯</div>
+          <div>
+            <h4>Perfect Match AI</h4>
+            <p>Your personal AI game analyst. Get a detailed explanation of exactly why a game matches your profile — not just a score, but real insights.</p>
+          </div>
+        </div>
+
+        <div class="modal-feature">
+          <div class="modal-feature-icon">📊</div>
+          <div>
+            <h4>Gamer DNA</h4>
+            <p>Discover your gamer identity through a visual profile based on your taste, platforms and play style. Unique, personal — and shareable.</p>
+          </div>
+        </div>
+
+        <div class="modal-feature">
+          <div class="modal-feature-icon">🗺️</div>
+          <div>
+            <h4>Hidden Gems For You</h4>
+            <p>Undiscovered games hand-picked for your exact taste. Not popular picks — hidden treasures you'd never find on your own.</p>
+          </div>
+        </div>
+
+      </div>
+      <a class="modal-cta" href="https://play.google.com/store/apps/details?id=com.aifindgames.app" target="_blank" rel="noopener noreferrer">
+        Get AI Find Games →
+      </a>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
