@@ -4,11 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LM Tech Studio</title>
-  
   <link rel="icon" type="image/png" href="lm-tech-logo.png" />
   <link rel="apple-touch-icon" href="lm-tech-logo.png" />
-  
-  <meta name="description" content="Building intelligent apps that simplify complexity and create clarity." />
+  <meta name="description" content="Building intelligent apps that solve problems that still don't have great solutions." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,20 +20,20 @@
       <img src="lm-tech-logo.png" alt="LM Tech Studio logo" class="brand-logo" />
       <h1 class="brand-title">LM Tech Studio</h1>
     </div>
-    <p class="hero-slogan"> Building intelligent apps <br/> that simplify complexity and create clarity.</p>
+    <p class="hero-slogan">Building intelligent apps<br/>that simplify complexity and create clarity.</p>
   </header>
 
   <!-- ── ABOUT ─────────────────────────────────────────────────────────────── -->
   <section class="about">
-  <p class="about-text">
-    LM Tech Studio was founded in 2025 by a developer who started heavily using AI tools — and quickly realized that nothing out there truly solved what he was looking for.<br /><br />
-    So he built it himself.<br /><br />
-    AI Multi Search and AI Find Games were born from real frustrations, real needs, and a demand he kept seeing that nobody was properly addressing.<br /><br />
-    One goal:<br />
-    keep building intelligent apps that solve problems that still don't have great solutions.<br /><br />
-    Léo Muller
-  </p>
-</section>
+    <p class="about-text">
+      LM Tech Studio was founded in 2025 by a developer who started heavily using AI tools — and quickly realized that nothing out there truly solved what he was looking for.<br /><br />
+      So he built it himself.<br /><br />
+      AI Multi Search and AI Find Games were born from real frustrations, real needs, and a demand he kept seeing that nobody was properly addressing.<br /><br />
+      One goal:<br />
+      keep building intelligent apps that solve problems that still don't have great solutions.<br /><br />
+      Léo Muller
+    </p>
+  </section>
 
   <main>
 
@@ -44,7 +42,7 @@
       <h2>Apps</h2>
       <div class="app-grid">
 
-        <!-- AI Multi Search -->
+        <!-- AI Multi Search — carte → site web, badge → Play Store -->
         <a class="app-card blue" href="https://aimultisearch.com/" target="_blank" rel="noopener noreferrer">
           <div class="card-image">
             <img src="ai-multi-search.png" alt="AI Multi Search" />
@@ -52,19 +50,31 @@
           <div class="card-content">
             <h3>AI Multi Search</h3>
             <p>Ask once. Compare answers from multiple AI models.</p>
-            <span class="badge">Available on Android</span>
+            <a class="badge"
+               href="https://play.google.com/store/apps/details?id=com.lmtechstudio.aimultisearch"
+               target="_blank"
+               rel="noopener noreferrer"
+               onclick="event.stopPropagation()">
+              Available on Android
+            </a>
           </div>
         </a>
 
-        <!-- AI Find Games -->
-        <a class="app-card green" href="https://play.google.com/store/apps/details?id=com.aifindgames.app" target="_blank" rel="noopener noreferrer">
+        <!-- AI Find Games — carte → site web, badge → Play Store -->
+        <a class="app-card green" href="https://aifindgames.com/" target="_blank" rel="noopener noreferrer">
           <div class="card-image">
             <img src="ai-find-games..png" alt="AI Find Games" />
           </div>
           <div class="card-content">
             <h3>AI Find Games</h3>
             <p>Find your next game based on your profile, mood and preferences.</p>
-            <span class="badge">Available on Android</span>
+            <a class="badge"
+               href="https://play.google.com/store/apps/details?id=com.aifindgames.app"
+               target="_blank"
+               rel="noopener noreferrer"
+               onclick="event.stopPropagation()">
+              Available on Android
+            </a>
           </div>
         </a>
 
@@ -78,33 +88,45 @@
 
         <!-- Cliquable → popup PRO features -->
         <div class="update-item clickable" id="news-pro" onclick="openModal()">
-          <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon" />
+          <div class="update-icon-wrap">
+            <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
+          </div>
           <p><strong>AI Find Games</strong> — Coming soon · Perfect Match AI · Gamer DNA · Hidden Gems For You</p>
           <span class="news-arrow">›</span>
         </div>
 
         <div class="update-item">
-          <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon" />
+          <div class="update-icon-wrap">
+            <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
+          </div>
           <p><strong>AI Find Games</strong> — v1.0.3 · Stability fix</p>
         </div>
 
         <div class="update-item">
-          <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon" />
+          <div class="update-icon-wrap">
+            <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
+          </div>
           <p><strong>AI Find Games</strong> — Now available on Google Play</p>
         </div>
 
         <div class="update-item">
-          <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon" />
+          <div class="update-icon-wrap">
+            <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
+          </div>
           <p><strong>AI Multi Search</strong> — Coming soon · Grok &amp; Camera Search</p>
         </div>
 
         <div class="update-item">
-          <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon" />
+          <div class="update-icon-wrap">
+            <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
+          </div>
           <p><strong>AI Multi Search</strong> — Mistral integrated</p>
         </div>
 
         <div class="update-item">
-          <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon" />
+          <div class="update-icon-wrap">
+            <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
+          </div>
           <p><strong>AI Multi Search</strong> — Insight feature released</p>
         </div>
 
