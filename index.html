@@ -42,7 +42,7 @@
       <h2>Apps</h2>
       <div class="app-grid">
 
-        <!-- AI Multi Search — carte → site web, badge → Play Store -->
+        <!-- AI Multi Search — carte → site web, badge → Play Store via JS -->
         <a class="app-card blue" href="https://aimultisearch.com/" target="_blank" rel="noopener noreferrer">
           <div class="card-image">
             <img src="ai-multi-search.png" alt="AI Multi Search" />
@@ -50,17 +50,14 @@
           <div class="card-content">
             <h3>AI Multi Search</h3>
             <p>Ask once. Compare answers from multiple AI models.</p>
-            <a class="badge"
-               href="https://play.google.com/store/apps/details?id=com.lmtechstudio.aimultisearch"
-               target="_blank"
-               rel="noopener noreferrer"
-               onclick="event.stopPropagation()">
+            <!-- FIX : span au lieu de <a> — évite le <a> dans <a> invalide -->
+            <span class="badge" onclick="event.preventDefault(); event.stopPropagation(); window.open('https://play.google.com/store/apps/details?id=com.lmtechstudio.aimultisearch', '_blank')">
               Available on Android
-            </a>
+            </span>
           </div>
         </a>
 
-        <!-- AI Find Games — carte → site web, badge → Play Store -->
+        <!-- AI Find Games — carte → site web, badge → Play Store via JS -->
         <a class="app-card green" href="https://aifindgames.com/" target="_blank" rel="noopener noreferrer">
           <div class="card-image">
             <img src="ai-find-games..png" alt="AI Find Games" />
@@ -68,13 +65,10 @@
           <div class="card-content">
             <h3>AI Find Games</h3>
             <p>Find your next game based on your profile, mood and preferences.</p>
-            <a class="badge"
-               href="https://play.google.com/store/apps/details?id=com.aifindgames.app"
-               target="_blank"
-               rel="noopener noreferrer"
-               onclick="event.stopPropagation()">
+            <!-- FIX : span au lieu de <a> — évite le <a> dans <a> invalide -->
+            <span class="badge" onclick="event.preventDefault(); event.stopPropagation(); window.open('https://play.google.com/store/apps/details?id=com.aifindgames.app', '_blank')">
               Available on Android
-            </a>
+            </span>
           </div>
         </a>
 
@@ -86,7 +80,6 @@
       <h2>News</h2>
       <div class="update-list">
 
-        <!-- Cliquable → popup PRO features -->
         <div class="update-item clickable" id="news-pro" onclick="openModal()">
           <div class="update-icon-wrap">
             <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
