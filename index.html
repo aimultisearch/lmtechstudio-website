@@ -6,7 +6,21 @@
   <title>LM Tech Studio</title>
   <link rel="icon" type="image/png" href="lm-tech-logo.png" />
   <link rel="apple-touch-icon" href="lm-tech-logo.png" />
-  <meta name="description" content="Building intelligent apps that solve problems that still don't have great solutions." />
+  <meta name="description" content="Building intelligent apps that simplify complexity and create clarity." />
+
+  <!-- Open Graph / LinkedIn / Facebook / WhatsApp -->
+  <meta property="og:title" content="LM Tech Studio" />
+  <meta property="og:description" content="Building intelligent apps that simplify complexity and create clarity." />
+  <meta property="og:image" content="https://www.lmtechstudio.com/og-image.png" />
+  <meta property="og:url" content="https://www.lmtechstudio.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LM Tech Studio" />
+  <meta name="twitter:description" content="Building intelligent apps that simplify complexity and create clarity." />
+  <meta name="twitter:image" content="https://www.lmtechstudio.com/og-image.png" />
+
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,7 +56,7 @@
       <h2>Apps</h2>
       <div class="app-grid">
 
-        <!-- AI Multi Search — carte → site web, badge → Play Store via JS -->
+        <!-- AI Multi Search -->
         <a class="app-card blue" href="https://aimultisearch.com/" target="_blank" rel="noopener noreferrer">
           <div class="card-image">
             <img src="ai-multi-search.png" alt="AI Multi Search" />
@@ -50,22 +64,20 @@
           <div class="card-content">
             <h3>AI Multi Search</h3>
             <p>Ask once. Compare answers from multiple AI models.</p>
-            <!-- FIX : span au lieu de <a> — évite le <a> dans <a> invalide -->
             <span class="badge" onclick="event.preventDefault(); event.stopPropagation(); window.open('https://play.google.com/store/apps/details?id=com.lmtechstudio.aimultisearch', '_blank')">
               Available on Android
             </span>
           </div>
         </a>
 
-        <!-- AI Find Games — carte → site web, badge → Play Store via JS -->
+        <!-- AI Find Games -->
         <a class="app-card green" href="https://aifindgames.com/" target="_blank" rel="noopener noreferrer">
           <div class="card-image">
-            <img src="ai-find-games..png" alt="AI Find Games" />
+            <img src="ai-find-games.png" alt="AI Find Games" />
           </div>
           <div class="card-content">
             <h3>AI Find Games</h3>
             <p>Find your next game based on your profile, mood and preferences.</p>
-            <!-- FIX : span au lieu de <a> — évite le <a> dans <a> invalide -->
             <span class="badge" onclick="event.preventDefault(); event.stopPropagation(); window.open('https://play.google.com/store/apps/details?id=com.aifindgames.app', '_blank')">
               Available on Android
             </span>
@@ -130,11 +142,11 @@
 
   <!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
   <footer>
-  <p>© 2026 LM Tech Studio · 
-    <a href="legal.html">Legal</a> · 
-    <a href="mailto:lmtechstudio.contact@gmail.com">Contact</a>
-  </p>
-</footer>
+    <p>© 2026 LM Tech Studio · 
+      <a href="legal.html">Legal</a> · 
+      <a href="mailto:lmtechstudio.contact@gmail.com">Contact</a>
+    </p>
+  </footer>
 
   <!-- ── MODAL PRO FEATURES ─────────────────────────────────────────────────── -->
   <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
