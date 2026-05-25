@@ -7,13 +7,13 @@
   <link rel="icon" type="image/png" href="lm-tech-logo.png" />
   <link rel="apple-touch-icon" href="lm-tech-logo.png" />
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GBGFR31RMR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-GBGFR31RMR');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBGFR31RMR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GBGFR31RMR');
+  </script>
   <meta name="description" content="Building intelligent apps that solve problems that still don't have great solutions." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,7 +50,7 @@
       <h2>Apps</h2>
       <div class="app-grid">
 
-        <!-- AI Multi Search — carte → site web, badge → Play Store via JS -->
+        <!-- AI Multi Search -->
         <a class="app-card blue" href="https://aimultisearch.com/" target="_blank" rel="noopener noreferrer">
           <div class="card-image">
             <img src="ai-multi-search.png" alt="AI Multi Search" />
@@ -58,14 +58,13 @@
           <div class="card-content">
             <h3>AI Multi Search</h3>
             <p>Ask once. Compare answers from multiple AI models.</p>
-            <!-- FIX : span au lieu de <a> — évite le <a> dans <a> invalide -->
             <span class="badge" onclick="event.preventDefault(); event.stopPropagation(); window.open('https://play.google.com/store/apps/details?id=com.lmtechstudio.aimultisearch', '_blank')">
               Available on Android
             </span>
           </div>
         </a>
 
-        <!-- AI Find Games — carte → site web, badge → Play Store via JS -->
+        <!-- AI Find Games -->
         <a class="app-card green" href="https://aifindgames.com/" target="_blank" rel="noopener noreferrer">
           <div class="card-image">
             <img src="ai-find-games..png" alt="AI Find Games" />
@@ -73,7 +72,6 @@
           <div class="card-content">
             <h3>AI Find Games</h3>
             <p>Find your next game based on your profile, mood and preferences.</p>
-            <!-- FIX : span au lieu de <a> — évite le <a> dans <a> invalide -->
             <span class="badge" onclick="event.preventDefault(); event.stopPropagation(); window.open('https://play.google.com/store/apps/details?id=com.aifindgames.app', '_blank')">
               Available on Android
             </span>
@@ -88,47 +86,62 @@
       <h2>News</h2>
       <div class="update-list">
 
+        <!-- AI Find Games — Coming soon PRO -->
         <div class="update-item clickable" id="news-pro" onclick="openModal()">
           <div class="update-icon-wrap">
             <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
           </div>
-          <p><strong>AI Find Games</strong> — Coming soon · Perfect Match AI · Gamer DNA · Hidden Gems For You</p>
+          <p>AI Find Games — Coming soon · Perfect Match AI · Gamer DNA · Hidden Gems For You</p>
           <span class="news-arrow">›</span>
         </div>
 
+        <!-- AI Find Games — v1.0.3 -->
         <div class="update-item">
           <div class="update-icon-wrap">
             <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
           </div>
-          <p><strong>AI Find Games</strong> — v1.0.3 · Stability fix</p>
+          <p>AI Find Games — v1.0.3 · Stability fix</p>
         </div>
 
-        <div class="update-item">
+        <!-- AI Find Games — Now available -->
+        <div class="update-item clickable" onclick="openModalLaunch()">
           <div class="update-icon-wrap">
             <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
           </div>
-          <p><strong>AI Find Games</strong> — Now available on Google Play</p>
+          <p>AI Find Games — Now available on Google Play</p>
+          <span class="news-arrow">›</span>
         </div>
 
+        <!-- AI Multi Search — Grok integrated -->
         <div class="update-item">
           <div class="update-icon-wrap">
             <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
           </div>
-          <p><strong>AI Multi Search</strong> — Coming soon · Grok &amp; Camera Search</p>
+          <p>AI Multi Search — Grok integrated</p>
         </div>
 
+        <!-- AI Multi Search — Coming soon -->
         <div class="update-item">
           <div class="update-icon-wrap">
             <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
           </div>
-          <p><strong>AI Multi Search</strong> — Mistral integrated</p>
+          <p>AI Multi Search — Coming soon · Camera Search</p>
         </div>
 
+        <!-- AI Multi Search — Mistral -->
         <div class="update-item">
           <div class="update-icon-wrap">
             <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
           </div>
-          <p><strong>AI Multi Search</strong> — Insight feature released</p>
+          <p>AI Multi Search — Mistral integrated</p>
+        </div>
+
+        <!-- AI Multi Search — Insight -->
+        <div class="update-item">
+          <div class="update-icon-wrap">
+            <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
+          </div>
+          <p>AI Multi Search — Insight feature released</p>
         </div>
 
       </div>
@@ -138,13 +151,13 @@
 
   <!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
   <footer>
-  <p>© 2026 LM Tech Studio · 
-    <a href="legal.html">Legal</a> · 
-    <a href="mailto:lmtechstudio.contact@gmail.com">Contact</a>
-  </p>
-</footer>
+    <p>© 2026 LM Tech Studio · 
+      <a href="legal.html">Legal</a> · 
+      <a href="mailto:lmtechstudio.contact@gmail.com">Contact</a>
+    </p>
+  </footer>
 
-  <!-- ── MODAL PRO FEATURES ─────────────────────────────────────────────────── -->
+  <!-- ── MODAL — PRO FEATURES ───────────────────────────────────────────────── -->
   <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
     <div class="modal" onclick="event.stopPropagation()">
       <button class="modal-close" onclick="closeModal()">✕</button>
@@ -175,6 +188,47 @@
           <div>
             <h4>Hidden Gems For You</h4>
             <p>Undiscovered games hand-picked for your exact taste. Not popular picks — hidden treasures you'd never find on your own.</p>
+          </div>
+        </div>
+
+      </div>
+      <a class="modal-cta" href="https://play.google.com/store/apps/details?id=com.aifindgames.app" target="_blank" rel="noopener noreferrer">
+        Get AI Find Games →
+      </a>
+    </div>
+  </div>
+
+  <!-- ── MODAL — LAUNCH ─────────────────────────────────────────────────────── -->
+  <div class="modal-overlay" id="modalOverlay2" onclick="closeModalLaunch()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModalLaunch()">✕</button>
+      <div class="modal-header">
+        <span class="modal-tag">🎮 Now available on Google Play</span>
+        <h3 class="modal-title">AI Find Games — What is it?</h3>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-feature">
+          <div class="modal-feature-icon">🤖</div>
+          <div>
+            <h4>AI-Powered Recommendations</h4>
+            <p>Tell the app your mood, preferences and gaming style — and let AI find the perfect game for you.</p>
+          </div>
+        </div>
+
+        <div class="modal-feature">
+          <div class="modal-feature-icon">🎯</div>
+          <div>
+            <h4>Your Gamer Profile</h4>
+            <p>The more you use it, the better it knows you. Personalized picks that actually match who you are as a gamer.</p>
+          </div>
+        </div>
+
+        <div class="modal-feature">
+          <div class="modal-feature-icon">🕹️</div>
+          <div>
+            <h4>Any Platform, Any Genre</h4>
+            <p>PC, console, mobile — indie or AAA. AI Find Games covers it all and finds what you'll actually enjoy.</p>
           </div>
         </div>
 
