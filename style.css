@@ -47,7 +47,7 @@ body {
   max-width: 420px;
   font-size: clamp(15px, 1.6vw, 20px);
   line-height: 1.4;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.35);
   margin: 0;
   text-align: right;
 }
