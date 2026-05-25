@@ -236,11 +236,12 @@ body {
   border-radius: 12px;
   padding: 20px 12px;
   margin: 0 -12px;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .update-item.clickable:hover {
   background: rgba(255,255,255,0.05);
+  box-shadow: 0 0 24px rgba(0, 255, 150, 0.18);
 }
 
 .update-item.clickable p {
@@ -248,7 +249,7 @@ body {
 }
 
 .news-arrow {
-  font-size: 22px;
+  font-size: 32px;
   color: rgba(0, 255, 150, 0.7);
   flex-shrink: 0;
   transition: transform 0.2s ease;
