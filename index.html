@@ -94,13 +94,28 @@
           <p>AI Multi Search — Grok integrated</p>
         </div>
 
-        <!-- AI Find Games — Coming soon PRO -->
-        <div class="update-item clickable" id="news-pro" onclick="openModal()">
+        <!-- AI Find Games — PRO live -->
+        <div class="update-item">
           <div class="update-icon-wrap">
             <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
           </div>
-          <p>AI Find Games — Coming soon · Perfect Match AI · Gamer DNA · Hidden Gems For You</p>
-          <span class="news-arrow">›</span>
+          <p>AI Find Games — PRO plan is live · Match Score · Tonight's Pick</p>
+        </div>
+
+        <!-- AI Find Games — Tonight's Pick -->
+        <div class="update-item">
+          <div class="update-icon-wrap">
+            <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
+          </div>
+          <p>AI Find Games — Tonight's Pick is live · One perfect game chosen for you every night</p>
+        </div>
+
+        <!-- AI Find Games — Coming soon -->
+        <div class="update-item">
+          <div class="update-icon-wrap">
+            <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
+          </div>
+          <p>AI Find Games — Coming soon · Games Like My Favorites · Hidden Gems For You</p>
         </div>
 
         <!-- AI Find Games — v1.0.3 -->
@@ -120,28 +135,38 @@
           <span class="news-arrow">›</span>
         </div>
 
-        <!-- AI Multi Search — Coming soon -->
-        <div class="update-item">
-          <div class="update-icon-wrap">
-            <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
+        <!-- OLDER NEWS — cachées par défaut -->
+        <div id="older-news" style="display: none;">
+
+          <!-- AI Multi Search — Coming soon -->
+          <div class="update-item">
+            <div class="update-icon-wrap">
+              <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
+            </div>
+            <p>AI Multi Search — Coming soon · Camera Search</p>
           </div>
-          <p>AI Multi Search — Coming soon · Camera Search</p>
+
+          <!-- AI Multi Search — Mistral -->
+          <div class="update-item">
+            <div class="update-icon-wrap">
+              <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
+            </div>
+            <p>AI Multi Search — Mistral integrated</p>
+          </div>
+
+          <!-- AI Multi Search — Insight -->
+          <div class="update-item">
+            <div class="update-icon-wrap">
+              <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
+            </div>
+            <p>AI Multi Search — Insight feature released</p>
+          </div>
+
         </div>
 
-        <!-- AI Multi Search — Mistral -->
-        <div class="update-item">
-          <div class="update-icon-wrap">
-            <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
-          </div>
-          <p>AI Multi Search — Mistral integrated</p>
-        </div>
-
-        <!-- AI Multi Search — Insight -->
-        <div class="update-item">
-          <div class="update-icon-wrap">
-            <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
-          </div>
-          <p>AI Multi Search — Insight feature released</p>
+        <!-- Bouton Show older news -->
+        <div class="update-item show-more-item" onclick="toggleOlderNews()" id="show-more-btn" style="cursor: pointer; justify-content: center;">
+          <p style="color: rgba(255,255,255,0.4); font-size: 13px;">Show older news ›</p>
         </div>
 
       </div>
@@ -156,47 +181,6 @@
       <a href="mailto:lmtechstudio.contact@gmail.com">Contact</a>
     </p>
   </footer>
-
-  <!-- ── MODAL — PRO FEATURES ───────────────────────────────────────────────── -->
-  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
-    <div class="modal" onclick="event.stopPropagation()">
-      <button class="modal-close" onclick="closeModal()">✕</button>
-      <div class="modal-header">
-        <span class="modal-tag">✨ Coming soon to PRO</span>
-        <h3 class="modal-title">AI Find Games — Next PRO Features</h3>
-      </div>
-      <div class="modal-body">
-
-        <div class="modal-feature">
-          <div class="modal-feature-icon">🎯</div>
-          <div>
-            <h4>Perfect Match AI</h4>
-            <p>Your personal AI game analyst. Get a detailed explanation of exactly why a game matches your profile — not just a score, but real insights.</p>
-          </div>
-        </div>
-
-        <div class="modal-feature">
-          <div class="modal-feature-icon">📊</div>
-          <div>
-            <h4>Gamer DNA</h4>
-            <p>Discover your gamer identity through a visual profile based on your taste, platforms and play style. Unique, personal — and shareable.</p>
-          </div>
-        </div>
-
-        <div class="modal-feature">
-          <div class="modal-feature-icon">🗺️</div>
-          <div>
-            <h4>Hidden Gems For You</h4>
-            <p>Undiscovered games hand-picked for your exact taste. Not popular picks — hidden treasures you'd never find on your own.</p>
-          </div>
-        </div>
-
-      </div>
-      <a class="modal-cta" href="https://play.google.com/store/apps/details?id=com.aifindgames.app" target="_blank" rel="noopener noreferrer">
-        Get AI Find Games →
-      </a>
-    </div>
-  </div>
 
   <!-- ── MODAL — LAUNCH ─────────────────────────────────────────────────────── -->
   <div class="modal-overlay" id="modalOverlay2" onclick="closeModalLaunch()">
@@ -240,5 +224,18 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+    function toggleOlderNews() {
+      const older = document.getElementById('older-news');
+      const btn = document.getElementById('show-more-btn');
+      if (older.style.display === 'none') {
+        older.style.display = 'block';
+        btn.querySelector('p').textContent = 'Show less ‹';
+      } else {
+        older.style.display = 'none';
+        btn.querySelector('p').textContent = 'Show older news ›';
+      }
+    }
+  </script>
 </body>
 </html>
