@@ -238,6 +238,13 @@ body {
   display: block;
 }
 
+.icon-findapps {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
 .update-item p {
   margin: 0;
   font-size: 17px;
