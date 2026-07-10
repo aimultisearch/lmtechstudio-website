@@ -480,3 +480,26 @@ footer a:hover {
     border-radius: 20px;
   }
 }
+
+/* ── MODAL AI FIND APPS ────────────────────────────────────────────────────── */
+.modal-tag-grey {
+  color: rgba(200, 200, 200, 0.9);
+  background: rgba(200, 200, 200, 0.08);
+  border: 1px solid rgba(200, 200, 200, 0.2);
+}
+
+.modal-powered {
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+  margin: 8px 0 0;
+}
+
+.modal-cta-grey {
+  background: linear-gradient(135deg, rgba(180,180,180,0.15), rgba(140,140,140,0.1));
+  border: 1px solid rgba(180,180,180,0.3);
+  color: rgba(220,220,220,0.95);
+}
+
+.modal-cta-grey:hover {
+  background: linear-gradient(135deg, rgba(180,180,180,0.22), rgba(140,140,140,0.16));
+}
