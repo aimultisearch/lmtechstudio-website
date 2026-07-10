@@ -99,7 +99,7 @@ body {
 }
 
 .app-grid-single .app-card {
-  max-width: 680px;
+  max-width: 48%;
   width: 100%;
 }
 
