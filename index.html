@@ -101,7 +101,16 @@
       <h2>News</h2>
       <div class="update-list">
 
-        <!-- AI Find Games — Tonight's Pick (LATEST) -->
+        <!-- AI Find Apps — Website now available (LATEST) -->
+        <div class="update-item clickable" onclick="openModalFindApps()">
+          <div class="update-icon-wrap">
+            <img src="logo_aifindapps.png" alt="AI Find Apps icon" class="update-icon icon-findgames" />
+          </div>
+          <p>AI Find Apps — Website now available</p>
+          <span class="news-arrow">›</span>
+        </div>
+
+        <!-- AI Find Games — Tonight's Pick -->
         <div class="update-item">
           <div class="update-icon-wrap">
             <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
@@ -189,6 +198,48 @@
     </p>
   </footer>
 
+  <!-- ── MODAL — AI FIND APPS ───────────────────────────────────────────────── -->
+  <div class="modal-overlay" id="modalOverlayFindApps" onclick="closeModalFindApps()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModalFindApps()">✕</button>
+      <div class="modal-header">
+        <span class="modal-tag modal-tag-grey">🌐 Website now available</span>
+        <h3 class="modal-title">AI Find Apps — What is it?</h3>
+        <p class="modal-powered">Powered by AI Multi Search</p>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-feature">
+          <div class="modal-feature-icon">🔍</div>
+          <div>
+            <h4>AI-Powered Search</h4>
+            <p>Describe what you need in plain words — AI finds the best apps that match exactly what you're looking for.</p>
+          </div>
+        </div>
+
+        <div class="modal-feature">
+          <div class="modal-feature-icon">⭐</div>
+          <div>
+            <h4>Smart Ranking</h4>
+            <p>Every result comes with a match score and an explanation of why this app fits your need.</p>
+          </div>
+        </div>
+
+        <div class="modal-feature">
+          <div class="modal-feature-icon">📱</div>
+          <div>
+            <h4>Any Platform</h4>
+            <p>Android, iOS, web — AI Find Apps covers all platforms and finds the best option for you.</p>
+          </div>
+        </div>
+
+      </div>
+      <a class="modal-cta modal-cta-grey" href="https://aifindapps.com/" target="_blank" rel="noopener noreferrer">
+        Try AI Find Apps →
+      </a>
+    </div>
+  </div>
+
   <!-- ── MODAL — LAUNCH ─────────────────────────────────────────────────────── -->
   <div class="modal-overlay" id="modalOverlay2" onclick="closeModalLaunch()">
     <div class="modal" onclick="event.stopPropagation()">
@@ -242,6 +293,13 @@
         older.style.display = 'none';
         btn.querySelector('p').textContent = 'Show older news ›';
       }
+    }
+
+    function openModalFindApps() {
+      document.getElementById('modalOverlayFindApps').classList.add('active');
+    }
+    function closeModalFindApps() {
+      document.getElementById('modalOverlayFindApps').classList.remove('active');
     }
   </script>
 </body>
