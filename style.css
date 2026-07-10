@@ -92,6 +92,17 @@ body {
   align-items: start;
 }
 
+.app-grid-single {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.app-grid-single .app-card {
+  max-width: 680px;
+  width: 100%;
+}
+
 /* ── CARDS ─────────────────────────────────────────────────────────────────── */
 .app-card {
   display: flex;
@@ -118,6 +129,10 @@ body {
 
 .app-card.green:hover {
   box-shadow: 0 35px 120px rgba(0, 255, 150, 0.28);
+}
+
+.app-card.grey:hover {
+  box-shadow: 0 35px 120px rgba(180, 180, 180, 0.25);
 }
 
 .card-image {
