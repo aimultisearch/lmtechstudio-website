@@ -445,7 +445,7 @@ footer a:hover {
 }
 
 /* ── RESPONSIVE ────────────────────────────────────────────────────────────── */
-@media (max-width: 100px) {
+@media (max-width: 900px) {
   .hero {
     flex-direction: column;
     align-items: flex-start;
@@ -468,6 +468,10 @@ footer a:hover {
 
   .app-grid {
     grid-template-columns: 1fr;
+  }
+
+  .app-grid-single .app-card {
+    max-width: 100%;
   }
 
   .card-image {
