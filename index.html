@@ -58,9 +58,14 @@
           <div class="card-content">
             <h3>AI Multi Search</h3>
             <p>Ask once. Compare answers from multiple AI models.</p>
-            <span class="badge" onclick="event.preventDefault(); event.stopPropagation(); window.open('https://play.google.com/store/apps/details?id=com.lmtechstudio.aimultisearch', '_blank')">
-              Available on Android
-            </span>
+            <div class="badge-row" style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <span class="badge" onclick="event.preventDefault(); event.stopPropagation(); window.open('https://play.google.com/store/apps/details?id=com.lmtechstudio.aimultisearch', '_blank')">
+                Available on Android
+              </span>
+              <span class="badge" onclick="event.preventDefault(); event.stopPropagation(); window.open('https://apps.apple.com/ch/app/ai-multi-search/id6784846445', '_blank')">
+                Available on iOS
+              </span>
+            </div>
           </div>
         </a>
 
@@ -100,6 +105,14 @@
     <section class="updates">
       <h2>News</h2>
       <div class="update-list">
+
+        <!-- AI Multi Search — Now available on App Store (LATEST) -->
+        <div class="update-item">
+          <div class="update-icon-wrap">
+            <img src="icon-aimultisearch.png" alt="AI Multi Search icon" class="update-icon icon-multisearch" />
+          </div>
+          <p>AI Multi Search — Now available on App Store</p>
+        </div>
 
         <!-- AI Find Apps — Website now available (LATEST) -->
         <div class="update-item clickable" onclick="openModalFindApps()">
@@ -142,17 +155,17 @@
           <p>AI Find Games — v1.0.3 · Stability fix</p>
         </div>
 
-        <!-- AI Find Games — Now available -->
-        <div class="update-item clickable" onclick="openModalLaunch()">
-          <div class="update-icon-wrap">
-            <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
-          </div>
-          <p>AI Find Games — Now available on Google Play</p>
-          <span class="news-arrow">›</span>
-        </div>
-
         <!-- OLDER NEWS — cachées par défaut -->
         <div id="older-news" style="display: none;">
+
+          <!-- AI Find Games — Now available -->
+          <div class="update-item clickable" onclick="openModalLaunch()">
+            <div class="update-icon-wrap">
+              <img src="icon-aifindgames.png" alt="AI Find Games icon" class="update-icon icon-findgames" />
+            </div>
+            <p>AI Find Games — Now available on Google Play</p>
+            <span class="news-arrow">›</span>
+          </div>
 
           <!-- AI Multi Search — Coming soon -->
           <div class="update-item">
